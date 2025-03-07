@@ -4,7 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { VscChromeClose } from "react-icons/vsc";
 import { GrContact, GrProjects } from "react-icons/gr";
 import { TbInfoSquareRounded, TbHome } from "react-icons/tb";
-import '../assets/styles/NavBar.css';
+//import '../assets/styles/NavBar.css';
 import myLogo from '../assets/images/iconRaw.png';
 
 const NavBar = ({ sections }) => {
@@ -66,7 +66,7 @@ const NavBar = ({ sections }) => {
       <div className="dropdown-container" style={{ display: dropdownOpen ? 'flex' : 'none' }}>
         <ul className="dropdown-menu">
           <li id="dropdown-top">
-            <img src={myLogoo}></img>
+            <img src={myLogo}></img>
             <button onClick={toggleDropdown}><VscChromeClose /></button>
           </li>
           <li>

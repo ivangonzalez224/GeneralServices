@@ -7,8 +7,8 @@ import NavBar from '../../navbar';
 
 const Inicio = () => {
   const headRef =  useRef();
-  const serviciosRef =  useRef();o
-  const contactRef =  useRef();
+  const serviciosRef =  useRef();
+  const contactoRef =  useRef();
   const sections = [headRef, serviciosRef, contactoRef];
 
   return (

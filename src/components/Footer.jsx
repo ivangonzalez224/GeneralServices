@@ -1,4 +1,4 @@
-import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsFacebook, BsInstagram } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
