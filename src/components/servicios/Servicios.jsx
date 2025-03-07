@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/styles/Servicios.css"; // Si tienes un archivo de estilos
+//import "../../assets/styles/Servicios.css";
 
 const Servicios = () => {
   const serviciosList = [
