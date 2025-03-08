@@ -1,5 +1,6 @@
 import { BsLinkedin, BsFacebook, BsInstagram } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
+import '../assets/styles/footer.css';
 
 const Footer = () => {
   return (
