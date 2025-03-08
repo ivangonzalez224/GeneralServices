@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700;900&display=swap');
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -8,16 +10,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #535bf2;
+  --backColor: #181d2b;
+  --fontBlack: #363636;
+  --fontpurple: #5a79f3;
 }
 
 body {
@@ -26,6 +22,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 h1 {
@@ -58,10 +55,6 @@ button:focus-visible {
   :root {
     color: #213547;
     background-color: #fff;
-  }
-
-  a:hover {
-    color: #747bff;
   }
 
   button {
