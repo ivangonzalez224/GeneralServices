@@ -1,8 +1,10 @@
 :root {
-  --backColor: #121212; /* Negro */
-  --fontPurple: #6A0DAD; /* Morado medio */
-  --fontWhite: #FFFFFF; /* Blanco */
-  --fontGray: #B0B0B0; /* Gris claro */
+  --backColor: #020202;
+  --fontPurple: #6A0DAD;
+  --fontLightPurple: #B57EDC;
+  --fontDarkPurple: #4B0082;
+  --fontWhite: #FFFFFF;
+  --fontGray: #B0B0B0;
 }
 
 nav {
@@ -31,6 +33,8 @@ nav ul {
 
 #nav-rigth {
   display: none;
+  box-sizing: border-box;
+  padding: 0 30px 0 0px;
 }
 
 #nav_cartoon {
@@ -45,7 +49,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--fontPurple);
+  color: var(--fontLightPurple);
 }
 
 #nav_cartoon a {
@@ -58,10 +62,14 @@ nav ul li {
   padding: 10px;
 }
 
+.logoTop {
+  height: 40px;
+}
+
 .active {
-  color: var(--fontPurple);
+  color: var(--fontLightPurple);
   font-weight: bold;
-  border-bottom: 2px solid var(--fontPurple);
+  border-bottom: 2px solid var(--fontLightPurple);
 }
 
 #nav-ham {
@@ -72,7 +80,8 @@ nav ul li {
 
 #nav_name {
   display: none;
-  font-size: 1.5rem;
+  width: 20%;
+  box-sizing: border-box;
   font-weight: bold;
 }
 
@@ -91,7 +100,7 @@ nav ul li {
 }
 
 .dropdown-menu {
-  background-color: var(--backColor);
+  background-color: var(--fontWhite);
   width: 80%;
   max-width: 300px;
   border-radius: 10px;
@@ -104,6 +113,7 @@ nav ul li {
 
 .dropdown-menu li {
   width: 100%;
+  box-sizing: border-box;
   text-align: center;
   padding: 15px 0;
   border-bottom: 1px solid var(--fontGray);
@@ -114,32 +124,41 @@ nav ul li {
 }
 
 .dropdown-menu li a {
-  color: var(--fontWhite);
+  color: var(--backColor);
   font-size: 1rem;
 }
 
 .dropdown-menu li a:hover {
-  color: var(--fontPurple);
+  color: var(--fontDarkPurple);
 }
 
 #dropdown-top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding: 10px 20px;
-  background: var(--fontPurple);
+  box-sizing: border-box;
+  padding: 10px 10px;
+  margin: 0;
+  background: #000;
+  color: #ff0000;
+}
+
+#dropdown-closedBtn {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: var(--fontWhite);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin-left: auto;
 }
 
 #dropdown-top img {
   width: 40px;
-}
-
-#dropdown-top button {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: var(--fontWhite);
-  cursor: pointer;
 }
 
 .drop-icon {

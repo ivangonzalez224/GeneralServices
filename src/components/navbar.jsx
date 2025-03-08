@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { VscChromeClose } from "react-icons/vsc";
-import { GrContact, GrProjects } from "react-icons/gr";
+import { GrContact, GrProjects, GrClose } from "react-icons/gr";
 import { TbInfoSquareRounded, TbHome } from "react-icons/tb";
-//import '../assets/styles/NavBar.css';
+import '../assets/styles/NavBar.css';
 import myLogo from '../assets/images/iconRaw.png';
 
 const NavBar = ({ sections }) => {
@@ -38,12 +38,12 @@ const NavBar = ({ sections }) => {
     <nav>
       <ul id="nav_name">
         <li className="nav_left">
-          <a href="#inicio">Musuq Technologies</a>
+          <a href="#inicio"><img class="logoTop" src={myLogo}></img></a>
         </li>
       </ul>
       <ul id="nav_cartoon">
         <li className="nav_left">
-          <a href="#inicio">Musuq Technologies</a>
+          <a href="#inicio"><img class="logoTop" src={myLogo}></img></a>
         </li>
       </ul>
       <ul id="nav-rigth">
@@ -51,7 +51,7 @@ const NavBar = ({ sections }) => {
           <a href="#inicio" onClick={() => setActiveLink('inicio')} className={activeLink === 'inicio' ? 'active' : ''}>Inicio</a>
         </li>
         <li>
-          <a href="#inicio" onClick={() => setActiveLink('servicios')} className={activeLink === 'servicios' ? 'active' : ''}>Servicios</a>
+          <a href="#servicios" onClick={() => setActiveLink('servicios')} className={activeLink === 'servicios' ? 'active' : ''}>Servicios</a>
         </li>
         <li>
           <a href="#contact" onClick={() => setActiveLink('contacto')} className={activeLink === 'contacto' ? 'active' : ''}>Contacto</a>
@@ -61,13 +61,12 @@ const NavBar = ({ sections }) => {
         <li onClick={toggleDropdown}>
           <a><RxHamburgerMenu /></a>
         </li>
-        
       </ul>
       <div className="dropdown-container" style={{ display: dropdownOpen ? 'flex' : 'none' }}>
         <ul className="dropdown-menu">
           <li id="dropdown-top">
             <img src={myLogo}></img>
-            <button onClick={toggleDropdown}><VscChromeClose /></button>
+            <button id="dropdown-closedBtn" onClick={toggleDropdown}><GrClose /></button>
           </li>
           <li>
             <a href="#inicio" onClick={toggleDropdown}><TbHome className="drop-icon"/> Inicio</a>
@@ -77,8 +76,6 @@ const NavBar = ({ sections }) => {
           </li>
           <li>
             <a href="#contacto" onClick={toggleDropdown}><GrContact className="drop-icon"/> Contacto</a>
-          </li>
-          <li>
           </li>
         </ul>
       </div>  
