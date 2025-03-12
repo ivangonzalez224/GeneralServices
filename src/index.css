@@ -11,9 +11,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --backColor: #181d2b;
-  --fontBlack: #363636;
-  --fontpurple: #5a79f3;
+  --backColor: #020202;
+  --fontpurple: #1E3A8A;
 }
 
 body {
