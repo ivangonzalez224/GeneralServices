@@ -1,11 +1,25 @@
 import React from "react";
-//import "../../assets/styles/Servicios.css";
+//import softwareIcon from "../../assets/images/software-icon.png";
+//import gpsIcon from "../../assets/images/gps-icon.png";
+//import iotIcon from "../../assets/images/iot-icon.png";
 
 const Servicios = () => {
   const serviciosList = [
-    { title: "Desarrollo de Software", description: "Aplicaciones móviles, web y sistemas empresariales." },
-    { title: "Sistemas GPS", description: "Monitoreo en tiempo real con dispositivos de rastreo." },
-    { title: "IoT y Automatización", description: "Control y monitoreo de sensores, luces y más." },
+    {
+      title: "Desarrollo de Software",
+      description: "Aplicaciones móviles, web y sistemas empresariales.",
+      image: 'softwareIcon',
+    },
+    {
+      title: "Sistemas GPS",
+      description: "Monitoreo en tiempo real con dispositivos de rastreo.",
+      image: 'gpsIcon',
+    },
+    {
+      title: "IoT y Automatización",
+      description: "Control y monitoreo de sensores, luces y más.",
+      image: 'iotIcon',
+    },
   ];
 
   return (
@@ -14,6 +28,7 @@ const Servicios = () => {
       <div className="servicios-container">
         {serviciosList.map((servicio, index) => (
           <div key={index} className="servicio-card">
+            <img src={servicio.image} alt={servicio.title} />
             <h3>{servicio.title}</h3>
             <p>{servicio.description}</p>
           </div>
