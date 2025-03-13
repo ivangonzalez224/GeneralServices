@@ -1,0 +1,112 @@
+.contacto {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: var(--fontWhite);
+  color: var(--backColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--backColor);
+}
+
+.contacto-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.contacto-info {
+  max-width: 450px;
+  text-align: left;
+}
+
+.contacto-info p {
+  font-size: 1.2rem;
+  color: var(--backColor);
+  margin-bottom: 15px;
+}
+
+.contacto-info a {
+  color: var(--fontBlue);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contacto-info a:hover {
+  text-decoration: underline;
+}
+
+/* Formulario */
+.contacto form {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contacto form input,
+.contacto form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid var(--backColor);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contacto form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contacto form button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--backColor);
+  color: var(--fontWhite);
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contacto form button:hover {
+  background-color: var(--fontBlue);
+}
+
+/* Imagen */
+.contacto-img {
+  width: 400px;
+  height: auto;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .contacto-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contacto-info {
+    text-align: center;
+  }
+
+  .contacto-img {
+    width: 300px;
+  }
+}
