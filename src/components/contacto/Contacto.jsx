@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-//import "../../assets/styles/Contacto.css";
+import "../../assets/styles/Contacto.css";
+//import contactoImage from "../../assets/images/contacto-image.png";
 
 const Contacto = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -18,12 +19,25 @@ const Contacto = () => {
   return (
     <div className="contacto">
       <h2>Contacto</h2>
-      <form onSubmit={handleSubmit}>
-        <input type="text" name="name" placeholder="Nombre" value={formData.name} onChange={handleChange} required />
-        <input type="email" name="email" placeholder="Correo Electrónico" value={formData.email} onChange={handleChange} required />
-        <textarea name="message" placeholder="Tu mensaje" value={formData.message} onChange={handleChange} required />
-        <button type="submit">Enviar</button>
-      </form>
+      <div className="contacto-container">
+        {/* Información de contacto */}
+        <div className="contacto-info">
+          <p>¿Tienes alguna pregunta o quieres trabajar con nosotros? ¡Contáctanos!</p>
+          <p>Email: <a href="mailto:contacto@musuqtech.com">contacto@musuqtech.com</a></p>
+          <p>Teléfono: +51 999 999 999</p>
+        </div>
+
+        {/* Formulario */}
+        <form onSubmit={handleSubmit}>
+          <input type="text" name="name" placeholder="Nombre" value={formData.name} onChange={handleChange} required />
+          <input type="email" name="email" placeholder="Correo Electrónico" value={formData.email} onChange={handleChange} required />
+          <textarea name="message" placeholder="Tu mensaje" value={formData.message} onChange={handleChange} required />
+          <button type="submit">Enviar</button>
+        </form>
+
+        {/* Imagen ilustrativa */}
+        <img className="contacto-img" src={contactoImage} alt="Contacta con nosotros" />
+      </div>
     </div>
   );
 };
