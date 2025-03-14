@@ -14,7 +14,7 @@
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: var(--backColor);
+  color: var(--fontPurple);
 }
 
 .contacto-container {
@@ -50,12 +50,14 @@
 
 /* Formulario */
 .contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 400px;
-  background: rgba(0, 0, 0, 0.05);
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contacto form input,
@@ -63,7 +65,8 @@
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
-  border: 1px solid var(--backColor);
+  border: none;
+  background-color: #e0eafa;
   border-radius: 6px;
   font-size: 1rem;
 }
@@ -76,7 +79,7 @@
 .contacto form button {
   width: 100%;
   padding: 12px;
-  background-color: var(--backColor);
+  background-color: var(--fontPurple);
   color: var(--fontWhite);
   font-size: 1.2rem;
   border: none;
@@ -86,7 +89,7 @@
 }
 
 .contacto form button:hover {
-  background-color: var(--fontBlue);
+  background-color: var(--fontDarkPurple);
 }
 
 /* Imagen */

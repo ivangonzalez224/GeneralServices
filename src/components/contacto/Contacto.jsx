@@ -23,8 +23,8 @@ const Contacto = () => {
         {/* Información de contacto */}
         <div className="contacto-info">
           <p>¿Tienes alguna pregunta o quieres trabajar con nosotros? ¡Contáctanos!</p>
-          <p>Email: <a href="mailto:contacto@musuqtech.com">contacto@musuqtech.com</a></p>
-          <p>Teléfono: +51 999 999 999</p>
+          <p>Correo: <a href="mailto:contacto@musuqtech.com">contacto@musuqtech.com</a></p>
+          <p>WhatsApp: +51 998438698</p>
         </div>
 
         {/* Formulario */}
@@ -34,9 +34,6 @@ const Contacto = () => {
           <textarea name="message" placeholder="Tu mensaje" value={formData.message} onChange={handleChange} required />
           <button type="submit">Enviar</button>
         </form>
-
-        {/* Imagen ilustrativa */}
-        <img className="contacto-img" src="contactoImage" alt="Contacta con nosotros" />
       </div>
     </div>
   );
