@@ -5,7 +5,7 @@ import { VscChromeClose } from "react-icons/vsc";
 import { GrContact, GrProjects, GrClose } from "react-icons/gr";
 import { TbInfoSquareRounded, TbHome } from "react-icons/tb";
 import '../assets/styles/NavBar.css';
-import myLogo from '../assets/images/iconRaw.png';
+import myLogo from '../assets/images/iconNavDest.png';
 
 const NavBar = ({ sections }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -38,12 +38,12 @@ const NavBar = ({ sections }) => {
     <nav>
       <ul id="nav_name">
         <li className="nav_left">
-          <a href="#inicio"><img class="logoTop" src={myLogo}></img></a>
+          <a href="#inicio"><img className="logoTop" src={myLogo}></img></a>
         </li>
       </ul>
       <ul id="nav_cartoon">
         <li className="nav_left">
-          <a href="#inicio"><img class="logoTop" src={myLogo}></img></a>
+          <a href="#inicio"><img className="logoTop" src={myLogo}></img></a>
         </li>
       </ul>
       <ul id="nav-rigth">
