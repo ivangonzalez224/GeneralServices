@@ -36,7 +36,7 @@ const Contacto = () => {
         </form>
 
         {/* Imagen ilustrativa */}
-        <img className="contacto-img" src={contactoImage} alt="Contacta con nosotros" />
+        <img className="contacto-img" src="contactoImage" alt="Contacta con nosotros" />
       </div>
     </div>
   );

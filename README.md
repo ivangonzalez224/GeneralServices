@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h2><b>React Vite JavaScript Template</b></h2>
+  <h2><b>General Services</b></h2>
   <h4>Ivan Gonzalez</h4>
 
 </div>
@@ -24,14 +24,14 @@
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
+- [🙏 Attribution](#attribution)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 React Vite JavaScript Template <a name="about-project"></a>
+# 📖 General Services <a name="about-project"></a>
 
-**React Vite JavaScript Template** is a way to speed you up as you will have your boilerplate code ready for a React app using Vite and JavaScript.
+**General Services** is a lnading page for a bussines that offers genearl tech services build in React, Vite and JavaScript.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -62,7 +62,7 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-In this project it is used React to crerate a template using Vite and JavaScript.
+In this project it is used React to create a landing page using Vite and JavaScript.
 
 ### Prerequisites
 
@@ -80,7 +80,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/ivangonzalez224/React-Vite-JS-Template.git
+  git clone https://github.com/ivangonzalez224/GeneralServices.git
 ```
 
 ### Install
@@ -106,7 +106,6 @@ To run the project, do the following:
 👤 **Iván Gonzalez**
 
 - GitHub: [@ivangonzalez224](https://github.com/ivangonzalez224)
-- Twitter: [@Ivan Gonzalez](https://twitter.com/ivang2204)
 - LinkedIn: [Iván Gonzalez Robles](https://www.linkedin.com/in/iván-gonzalez-robles-957491275/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -115,7 +114,7 @@ To run the project, do the following:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add a folder pattern structure.**
+- [ ] **Add a client section.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,7 +124,7 @@ To run the project, do the following:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ivangonzalez224/React-Vite-JS-Template/issues).
+Feel free to check the [issues page](https://github.com/ivangonzalez224/GeneralServices/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,17 +136,15 @@ If you like this project please leave a star!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
+<!-- ATTRIBUTION -->
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank my family for the support.
+## Attribution <a name="attribution"></a>
 
 <h3><b>Attribution</b></h3>
 
 - Title: React Vite JavaScript Template
 - Author: [Ivan Gonzalez](https://github.com/ivangonzalez224)
-- Source: https://github.com/ivangonzalez224/React-Vite-JS-Template
+- Source: https://github.com/ivangonzalez224/GeneralServices
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
