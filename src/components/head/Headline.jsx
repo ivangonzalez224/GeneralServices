@@ -1,6 +1,6 @@
 import React from "react";
 import "../../assets/styles/Headline.css";
-//import techBackground from "../../assets/images/tech-background.png";
+import techBackground from "../../assets/images/tech-background.png";
 //import innovationImage from "../../assets/images/innovation.png";
 const Headline = () => {
   return (
