@@ -12,7 +12,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(18, 18, 18, 0.7);
+  background: rgba(18, 18, 18, 0.2);
 }
 
 .headline-content {
@@ -32,12 +32,13 @@
 
 .headline-text h1 {
   font-size: 3rem;
-  color: #1369a3;
+  color: var(--fontWhite);
+  font-weight: 700;
 }
 
 .headline-text p {
   font-size: 1.2rem;
-  color: var(--fontGray);
+  color: var(--fontWhite);
   margin-top: 10px;
 }
 
@@ -65,9 +66,10 @@
 }
 
 .headline-image img {
-  width: 100%;
+  width: 50%;
   max-width: 400px;
   animation: fadeInRight 1s ease-in-out;
+  border-radius: 21px;
 }
 
 /* Animaciones */

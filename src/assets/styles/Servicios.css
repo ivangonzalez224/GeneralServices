@@ -36,8 +36,7 @@
 }
 
 .servicio-card img {
-  width: 80px;
-  height: 80px;
+  width: 95%;
   object-fit: cover;
   margin-bottom: 15px;
 }

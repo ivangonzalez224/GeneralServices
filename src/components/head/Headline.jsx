@@ -1,7 +1,6 @@
 import React from "react";
 import "../../assets/styles/Headline.css";
 import techBackground from "../../assets/images/tech-background.png";
-//import innovationImage from "../../assets/images/innovation.png";
 const Headline = () => {
   return (
     <section className="headline">
@@ -11,9 +10,6 @@ const Headline = () => {
           <h1>Innovación en Tecnología</h1>
           <p>Soluciones en software, GPS y automatización para tu empresa.</p>
           <a href="#servicios" className="btn-primary">Descubre más</a>
-        </div>
-        <div className="headline-image">
-          <img src="" alt="Innovación tecnológica" />
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 import React from "react";
-//import softwareIcon from "../../assets/images/software-icon.png";
+import softwareIcon from "../../assets/images/software-icon.png";
 //import gpsIcon from "../../assets/images/gps-icon.png";
 //import iotIcon from "../../assets/images/iot-icon.png";
 import "../../assets/styles/Servicios.css";
@@ -9,7 +9,7 @@ const Servicios = () => {
     {
       title: "Desarrollo de Software",
       description: "Aplicaciones móviles, web y sistemas empresariales.",
-      image: 'softwareIcon',
+      image: softwareIcon,
     },
     {
       title: "Sistemas GPS",
