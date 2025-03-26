@@ -1,7 +1,7 @@
 import React from "react";
 import softwareIcon from "../../assets/images/software-icon.png";
-//import gpsIcon from "../../assets/images/gps-icon.png";
-//import iotIcon from "../../assets/images/iot-icon.png";
+import gpsIcon from "../../assets/images/gps_img.png";
+import iotIcon from "../../assets/images/iot-service.png";
 import "../../assets/styles/Servicios.css";
 
 const Servicios = () => {
@@ -14,12 +14,12 @@ const Servicios = () => {
     {
       title: "Sistemas GPS",
       description: "Monitoreo en tiempo real con dispositivos de rastreo.",
-      image: 'gpsIcon',
+      image: gpsIcon,
     },
     {
       title: "IoT y Automatización",
       description: "Control y monitoreo de sensores, luces y más.",
-      image: 'iotIcon',
+      image: iotIcon,
     },
   ];
 
