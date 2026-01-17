@@ -1,0 +1,47 @@
+/**
+ * Color Palette
+ * Esquema de colores centralizado para la aplicación
+ */
+
+:root {
+  /* --- Colores Primarios --- */
+  --color-primary: #1E3A8A;           /* Azul oscuro principal */
+  --color-primary-light: #60A5FA;     /* Azul claro */
+  --color-primary-dark: #0F172A;      /* Azul muy oscuro */
+
+  /* --- Colores de Fondo --- */
+  --color-bg-dark: #020202;           /* Negro casi puro */
+  --color-bg-light: #f5f5f5;          /* Gris muy claro */
+  --color-bg-lighter: #fafafa;        /* Blanco roto */
+  --color-bg-gradient-start: #020202; /* Gradiente inicio */
+  --color-bg-gradient-end: #0A0A28;   /* Gradiente fin (azul oscuro) */
+
+  /* --- Colores de Texto --- */
+  --color-text-primary: #FFFFFF;      /* Blanco */
+  --color-text-secondary: #B0B0B0;    /* Gris */
+  --color-text-muted: #858585;        /* Gris más oscuro */
+
+  /* --- Colores Neutros --- */
+  --color-border: #858585;            /* Borde gris */
+  --color-overlay: rgba(0, 0, 0, 0.7); /* Overlay oscuro */
+
+  /* --- Colores Semi-transparentes --- */
+  --color-glass: rgba(255, 255, 255, 0.1); /* Efecto cristal */
+  --color-shadow: rgba(0, 0, 0, 0.2);      /* Sombra suave */
+  --color-shadow-hover: rgba(255, 255, 255, 0.2); /* Sombra en hover */
+
+  /* --- Alias para Compatibilidad --- */
+  --backColor: var(--color-bg-dark);
+  --fontPurple: var(--color-primary);
+  --fontLightPurple: var(--color-primary-light);
+  --fontDarkPurple: var(--color-primary-dark);
+  --fontWhite: var(--color-text-primary);
+  --fontGray: var(--color-text-secondary);
+}
+
+/**
+ * Usar en los estilos:
+ * - background-color: var(--color-bg-dark);
+ * - color: var(--color-text-primary);
+ * - border-color: var(--color-border);
+ */
