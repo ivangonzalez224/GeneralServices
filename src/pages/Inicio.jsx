@@ -13,13 +13,13 @@ const Inicio = () => {
   return (
     <Layout sections={sections}>
       <div className="main_home">
-        <section ref={headRef} id="inicior">  
+        <section ref={headRef} id="inicio">  
           <Headline />
         </section>
-        <section ref={serviciosRef} id="serviciosr">
+        <section ref={serviciosRef} id="servicios">
           <Servicios />
         </section>
-        <section ref={contactoRef} id="contactor">
+        <section ref={contactoRef} id="contacto">
           <Contacto />
         </section>
       </div>

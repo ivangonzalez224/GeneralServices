@@ -39,8 +39,7 @@ const Navbar = ({ sections }) => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // Extrae el ID sin la 'r' final (inicior -> inicio)
-          setActiveLink(entry.target.id.replace(/r$/, ''));
+          setActiveLink(entry.target.id);
         }
       });
     }, {
@@ -93,7 +92,8 @@ const Navbar = ({ sections }) => {
 
       {/* Navigation Links - Desktop */}
       <ul id="nav-desktop" className="nav-links">
-        {NAV_LINKS.map((link) => renderNavLink(link, false))}
+        {NAV_LINKS.filter(link => link.id !== 'contacto').map((link) => renderNavLink(link, false))}
+        {NAV_LINKS.filter(link => link.id === 'contacto').map((link) => renderNavLink(link, false))}
       </ul>
 
       {/* Mobile Menu Toggle */}
