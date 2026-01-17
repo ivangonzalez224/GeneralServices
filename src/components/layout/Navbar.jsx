@@ -2,30 +2,53 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { VscChromeClose } from "react-icons/vsc";
-import { GrContact, GrProjects, GrClose } from "react-icons/gr";
-import { TbInfoSquareRounded, TbHome } from "react-icons/tb";
+import { NAV_LINKS, LOGO_ALT } from '../../config/navigation';
 import '../../assets/styles/NavBar.css';
 import myLogo from '../../assets/images/iconNavDest.png';
 
+/**
+ * Navbar Component
+ * Barra de navegación responsive con soporte para móvil y escritorio
+ * 
+ * @param {Object} props - Props del componente
+ * @param {Array<Object>} props.sections - Array de referencias a secciones para el observer
+ * @returns {JSX.Element} Navbar component
+ */
 const Navbar = ({ sections }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState('home');
+  const [activeLink, setActiveLink] = useState('inicio');
 
+  /**
+   * Toggle del dropdown menu en móvil
+   */
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
 
+  /**
+   * Cierra el dropdown cuando se hace click en un link
+   */
+  const handleNavClick = () => {
+    setDropdownOpen(false);
+  };
+
+  /**
+   * Observer para detectar la sección activa al hacer scroll
+   */
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          setActiveLink(entry.target.id.slice(0, -1));
+          // Extrae el ID sin la 'r' final (inicior -> inicio)
+          setActiveLink(entry.target.id.replace(/r$/, ''));
         }
       });
+    }, {
+      threshold: 0.5,
     });
 
     sections.forEach((section) => {
-      if (section.current !== undefined) {
+      if (section?.current) {
         observer.observe(section.current);
       }
     });
@@ -34,50 +57,60 @@ const Navbar = ({ sections }) => {
       observer.disconnect();
     };
   }, [sections]);
+
+  /**
+   * Renderiza un link de navegación
+   */
+  const renderNavLink = (link, isMobile = false) => {
+    const Icon = link.icon;
+    const isActive = activeLink === link.id;
+    
+    return (
+      <li key={link.id}>
+        <a 
+          href={link.href}
+          className={isActive ? 'active' : ''}
+          onClick={isMobile ? handleNavClick : undefined}
+          aria-label={link.label}
+        >
+          <Icon aria-hidden="true" />
+          {isMobile && <span>{link.label}</span>}
+        </a>
+      </li>
+    );
+  };
+
   return (
     <nav>
-      <ul id="nav_name">
-        <li className="nav_left">
-          <a href="#inicio"><img className="logoTop" src={myLogo}></img></a>
-        </li>
+      {/* Logo - Visible en desktop y móvil */}
+      <a href="#inicio" className="nav-logo">
+        <img 
+          className="logoTop" 
+          src={myLogo} 
+          alt={LOGO_ALT}
+        />
+      </a>
+
+      {/* Navigation Links - Desktop */}
+      <ul id="nav-desktop" className="nav-links">
+        {NAV_LINKS.map((link) => renderNavLink(link, false))}
       </ul>
-      <ul id="nav_cartoon">
-        <li className="nav_left">
-          <a href="#inicio"><img className="logoTop" src={myLogo}></img></a>
-        </li>
-      </ul>
-      <ul id="nav-rigth">
-        <li>
-          <a href="#inicio"><TbHome/></a>
-        </li>
-        <li>
-          <a href="#servicios"><GrProjects/></a>
-        </li>
-        <li>
-          <a href="#contacto"><GrContact/></a>
-        </li>
-        <li>
-          <a href="#info"><TbInfoSquareRounded/></a>
-        </li>
-      </ul>
+
+      {/* Mobile Menu Toggle */}
       <div className="nav-mobile">
-        <button className="hamburger-btn" onClick={toggleDropdown}>
+        <button 
+          className="hamburger-btn" 
+          onClick={toggleDropdown}
+          aria-label="Toggle navigation menu"
+          aria-expanded={dropdownOpen}
+        >
           {dropdownOpen ? <VscChromeClose /> : <RxHamburgerMenu />}
         </button>
+
+        {/* Mobile Dropdown Menu */}
         {dropdownOpen && (
           <ul className="dropdown-menu">
-            <li>
-              <a href="#inicio"><TbHome/>Inicio</a>
-            </li>
-            <li>
-              <a href="#servicios"><GrProjects/>Servicios</a>
-            </li>
-            <li>
-              <a href="#contacto"><GrContact/>Contacto</a>
-            </li>
-            <li>
-              <a href="#info"><TbInfoSquareRounded/>Info</a>
-            </li>
+            {NAV_LINKS.map((link) => renderNavLink(link, true))}
           </ul>
         )}
       </div>
@@ -86,7 +119,16 @@ const Navbar = ({ sections }) => {
 };
 
 Navbar.propTypes = {
-  sections: PropTypes.arrayOf(PropTypes.object),
+  sections: PropTypes.arrayOf(PropTypes.shape({
+    current: PropTypes.oneOfType([
+      PropTypes.instanceOf(HTMLElement),
+      PropTypes.object,
+    ]),
+  })),
+};
+
+Navbar.defaultProps = {
+  sections: [],
 };
 
 export default Navbar;
