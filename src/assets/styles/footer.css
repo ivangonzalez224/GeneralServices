@@ -1,67 +1,165 @@
 .footer {
   width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-evenly;
-  border-top: #858585 solid 1px;
-  padding: 20px;
-  background-color: var(--backColor);
-  color: #fff;
+  /* Usamos el mismo gradiente que el Headline para consistencia */
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); 
+  color: #1e3a8a; /* Tu azul oscuro para el texto principal */
+  padding: 80px 20px 40px 20px;
+  border-top: 2px solid #e2e8f0;
 }
 
-footer.footer {
-  font-size: 18px;
+.footer-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.footer-column.branding {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente todo el contenido de la columna */
+  text-align: center;  /* Centra el texto de la descripción y el título */
+}
+
+/* Columna Branding */
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.footer-description {
+  color: #475569;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  max-width: 320px; /* Limitamos el ancho para que el centrado se vea mejor */
 }
 
 .footer-social {
+  display: flex;
+  flex-direction: row; /* Asegura que estén uno al lado del otro */
+  justify-content: center; /* Los centra dentro del contenedor .footer-social */
+  gap: 15px; /* Espaciado entre botones */
+  width: 100%;
+}
+
+/* Títulos de Columnas */
+.column-title {
+  color: #1e3a8a;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.column-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 30px;
+  height: 2px;
+  background-color: #2563eb; /* Tu azul primario vibrante */
+}
+
+/* Enlaces y Navegación */
+.footer-links {
   list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0;
 }
 
-.footer-social li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 15px;
+.footer-links li {
+  margin-bottom: 12px;
 }
 
-.footer-link {
-  color: #fff;
+.footer-links a {
+  color: #475569;
   text-decoration: none;
+  transition: var(--transition-smooth);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #2563eb;
+  padding-left: 5px;
+}
+
+/* Contacto e Iconos */
+.footer-contact-info {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.footer-link:link,
-.footer-link:visited,
-.footer-link:hover,
-.footer-link:active {
-  color: #fff;
-}
-
-#footer-mail {
+.contact-item {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-#footer-mail a {
+  gap: 12px;
+  color: #475569;
   text-decoration: none;
-  color: #fff;
+  font-size: 0.95rem;
+  transition: var(--transition-smooth);
+}
+
+.contact-item:hover {
+  color: #2563eb;
+}
+
+.contact-icon {
+  color: #2563eb; /* Azul primario para resaltar iconos */
+  font-size: 1.2rem;
+}
+
+/* Social Media */
+.social-link {
+  width: 42px;
+  height: 42px;
+  background: white;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #1e3a8a;
+  font-size: 1.2rem;
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
 }
 
-.contact-text {
-  display: inline;
+.social-link:hover {
+  background: #2563eb;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px rgba(37, 99, 235, 0.2);
+  border-color: #2563eb;
 }
 
-@media (max-width: 768px) {
-  .contact-text {
-    display: none;
-  }
+/* Footer Bottom */
+.footer-bottom {
+  padding-top: 30px;
+  border-top: 1px solid #cbd5e1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.footer-legal a {
+  color: #64748b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-legal a:hover {
+  color: #1e3a8a;
 }

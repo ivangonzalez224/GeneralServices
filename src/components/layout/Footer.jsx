@@ -1,16 +1,68 @@
-import { BsLinkedin, BsFacebook, BsInstagram } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
+import { BsLinkedin, BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
+import { MdEmail, MdLocationOn } from "react-icons/md";
+import { CONTACT_EMAIL, CONTACT_PHONE, COMPANY_NAME } from "../../config/constants";
 import '../../assets/styles/footer.css';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
-      <p>&copy; 2025 Musuq Technologies</p>
-      <ul className="footer-social">
-        <li><a className="footer-link" href="" target="_blank" rel="noreferrer"><BsFacebook /></a></li>
-        <li><a className="footer-link" href="" target="_blank" rel="noreferrer"><BsLinkedin /></a></li>
-        <li><a className="footer-link" href="" target="_blank" rel="noreferrer"><BsInstagram /></a></li>
-      </ul>
+      <div className="footer-wrapper">
+        <div className="footer-grid">
+          {/* Columna 1: Branding */}
+          <div className="footer-column branding">
+            <h3 className="footer-logo">{COMPANY_NAME}</h3>
+            <p className="footer-description">
+              Líderes en soluciones de electrónica, IoT y desarrollo de software a medida para la industria moderna.
+            </p>
+            <div className="footer-social">
+              <a href="#" className="social-link" aria-label="Facebook"><BsFacebook /></a>
+              <a href="#" className="social-link" aria-label="LinkedIn"><BsLinkedin /></a>
+              <a href="#" className="social-link" aria-label="Instagram"><BsInstagram /></a>
+            </div>
+          </div>
+
+          {/* Columna 2: Navegación Rápida */}
+          <div className="footer-column">
+            <h4 className="column-title">Navegación</h4>
+            <ul className="footer-links">
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#proyectos">Proyectos</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+
+          {/* Columna 3: Contacto Directo */}
+          <div className="footer-column">
+            <h4 className="column-title">Contacto</h4>
+            <div className="footer-contact-info">
+              <a href={`mailto:${CONTACT_EMAIL}`} className="contact-item">
+                <MdEmail className="contact-icon" />
+                <span>{CONTACT_EMAIL}</span>
+              </a>
+              <a href={`https://wa.me/51998438698`} className="contact-item">
+                <BsWhatsapp className="contact-icon" />
+                <span>{CONTACT_PHONE}</span>
+              </a>
+              <div className="contact-item">
+                <MdLocationOn className="contact-icon" />
+                <span>Lima, Perú</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <p>&copy; {currentYear} {COMPANY_NAME}. Todos los derechos reservados.</p>
+          <div className="footer-legal">
+            <a href="#">Privacidad</a>
+            <span className="separator">|</span>
+            <a href="#">Términos</a>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 };
