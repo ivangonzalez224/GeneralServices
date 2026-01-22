@@ -57,9 +57,9 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>&copy; {currentYear} {COMPANY_NAME}. Todos los derechos reservados.</p>
           <div className="footer-legal">
-            <a href="#">Privacidad</a>
+            <a href="/privacidad" target="_blank" rel="noopener noreferrer">Privacidad</a>
             <span className="separator">|</span>
-            <a href="#">Términos</a>
+            <a href="/terminos" target="_blank" rel="noopener noreferrer">Términos</a>
           </div>
         </div>
       </div>
