@@ -52,7 +52,7 @@
   color: var(--fontGray);
 }
 
-/* Responsivo */
+/* Responsive */
 @media (max-width: 768px) {
   .servicios-container {
     flex-direction: column;

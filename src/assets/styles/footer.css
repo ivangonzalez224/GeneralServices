@@ -1,8 +1,7 @@
 .footer {
   width: 100%;
-  /* Usamos el mismo gradiente que el Headline para consistencia */
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); 
-  color: #1e3a8a; /* Tu azul oscuro para el texto principal */
+  color: #1e3a8a;
   padding: 80px 20px 40px 20px;
   border-top: 2px solid #e2e8f0;
 }
@@ -22,8 +21,8 @@
 .footer-column.branding {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra horizontalmente todo el contenido de la columna */
-  text-align: center;  /* Centra el texto de la descripción y el título */
+  align-items: center;
+  text-align: center;
 }
 
 /* Columna Branding */
@@ -40,14 +39,14 @@
   line-height: 1.6;
   font-size: 0.95rem;
   margin-bottom: 24px;
-  max-width: 320px; /* Limitamos el ancho para que el centrado se vea mejor */
+  max-width: 320px;
 }
 
 .footer-social {
   display: flex;
-  flex-direction: row; /* Asegura que estén uno al lado del otro */
-  justify-content: center; /* Los centra dentro del contenedor .footer-social */
-  gap: 15px; /* Espaciado entre botones */
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
   width: 100%;
 }
 
@@ -67,7 +66,7 @@
   bottom: -8px;
   width: 30px;
   height: 2px;
-  background-color: #2563eb; /* Tu azul primario vibrante */
+  background-color: #2563eb;
 }
 
 /* Enlaces y Navegación */
@@ -115,7 +114,7 @@
 }
 
 .contact-icon {
-  color: #2563eb; /* Azul primario para resaltar iconos */
+  color: #2563eb;
   font-size: 1.2rem;
 }
 

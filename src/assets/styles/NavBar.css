@@ -1,15 +1,10 @@
-/**
- * Navbar Styles
- * Estilos profesionales y empresariales para la barra de navegación
- */
-
-/* ==================== Global Scroll Behavior ==================== */
+/* Global Scroll */
 
 html {
   scroll-behavior: smooth;
 }
 
-/* ==================== Navbar Base ==================== */
+/* Navbar Base */
 
 nav {
   width: 100%;
@@ -28,7 +23,7 @@ nav {
   border-bottom: 1px solid rgba(96, 165, 250, 0.1);
 }
 
-/* ==================== Logo ==================== */
+/* Logo */
 
 .nav-logo {
   display: flex;
@@ -56,7 +51,7 @@ nav {
   filter: brightness(1.1);
 }
 
-/* ==================== Navigation Links - Desktop ==================== */
+/* Navigation Links - Desktop */
 
 #nav-desktop {
   display: none;
@@ -117,7 +112,7 @@ nav {
   width: 100%;
 }
 
-/* ==================== CTA Button - Desktop ==================== */
+/* CTA Button - Desktop */
 
 #nav-desktop a[href="#contacto"] {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
@@ -139,7 +134,7 @@ nav {
   display: none;
 }
 
-/* ==================== Mobile Menu ==================== */
+/* Mobile Menu */
 
 .nav-mobile {
   display: flex;
@@ -167,7 +162,7 @@ nav {
   transform: scale(1.1);
 }
 
-/* ==================== Dropdown Menu - Mobile ==================== */
+/* Dropdown Menu - Mobile */
 
 .dropdown-menu {
   position: fixed;
@@ -253,7 +248,7 @@ nav {
   flex-shrink: 0;
 }
 
-/* ==================== CTA Button - Mobile ==================== */
+/* CTA Button - Mobile */
 
 .dropdown-menu a[href="#contacto"] {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
@@ -270,7 +265,7 @@ nav {
   padding-left: 20px;
 }
 
-/* ==================== Responsive ==================== */
+/* Responsive */
 
 @media (min-width: 768px) {
   #nav-desktop {

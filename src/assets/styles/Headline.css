@@ -39,7 +39,7 @@
   font-size: 4rem;
   font-weight: 800;
   line-height: 1.1;
-  color: #1e3a8a; /* Tu azul de títulos */
+  color: #1e3a8a;
   margin: 20px 0;
   letter-spacing: -1px;
 }
@@ -99,7 +99,7 @@
   animation: float 6s ease-in-out infinite;
 }
 
-/* Tarjeta Flotante (Toque moderno IoT) */
+/* Tarjeta Flotante */
 .floating-card {
   position: absolute;
   bottom: 40px;

@@ -1,9 +1,4 @@
-/**
- * Contacto Styles
- * Estilos profesionales y empresariales para la sección de contacto
- */
-
-/* ==================== Variables ==================== */
+/* Variables */
 
 :root {
   --contacto-padding-lg: 100px;
@@ -16,7 +11,7 @@
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ==================== Section Base ==================== */
+/* Section Base */
 
 .contacto {
   padding: var(--contacto-padding-lg) 20px;
@@ -63,7 +58,7 @@
   z-index: 1;
 }
 
-/* ==================== Header ==================== */
+/* Header */
 
 .contacto-header {
   text-align: center;
@@ -103,7 +98,7 @@
   font-weight: 400;
 }
 
-/* ==================== Container ==================== */
+/* Container */
 
 .contacto-container {
   display: grid;
@@ -115,7 +110,7 @@
   box-sizing: border-box;
 }
 
-/* ==================== Contact Info Cards ==================== */
+/* Contact Info Cards */
 
 .contacto-info {
   display: flex;
@@ -170,8 +165,7 @@
 .info-card h3 {
   margin: 0;
   font-size: 1.15rem;
-  font-weight: 700;primary
-  color: var(--color-bg-dark);
+  color: #1e3a8a;
 }
 
 .info-link {
@@ -204,7 +198,7 @@
   line-height: 1.5;
 }
 
-/* ==================== Form ==================== */
+/* Form */
 
 .contacto-form {
   padding: 48px;
@@ -284,7 +278,7 @@
 
 .form-group label {
   font-weight: 700;
-  color: #d0d1d4;
+  color: var(--color-text-muted);
   font-size: 0.95rem;
   letter-spacing: 0.3px;
 }
@@ -429,7 +423,7 @@
   font-weight: 500;
 }
 
-/* ==================== Responsive Design ==================== */
+/* Responsive Design */
 
 @media (max-width: 1024px) {
   :root {
@@ -598,7 +592,7 @@
   }
 }
 
-/* ==================== Accessibility ==================== */
+/* Accessibility */
 
 @media (prefers-reduced-motion: reduce) {
   .contacto-form,
