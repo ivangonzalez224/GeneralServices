@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import Headline from '../components/common/Headline';
 import Servicios from '../components/common/Servicios';
+import Servicios from '../components/common/Diagnostico';
 import Contacto from '../components/common/Contacto';
 import Layout from '../components/layout/Layout';
 
@@ -18,6 +19,9 @@ const Inicio = () => {
         </section>
         <section ref={serviciosRef} id="servicios">
           <Servicios />
+        </section>
+        <section ref={serviciosRef} id="diagnostico">
+          <Diagnostico />
         </section>
         <section ref={contactoRef} id="contacto">
           <Contacto />
