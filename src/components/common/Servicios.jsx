@@ -1,31 +1,34 @@
 import React from "react";
 import softwareIcon from "../../assets/images/software-icon.png";
-import gpsIcon from "../../assets/images/gps_img.png";
-import iotIcon from "../../assets/images/iot-service.png";
+import automationIcon from "../../assets/images/iot-service.png"; // puedes reemplazar luego
+import integrationIcon from "../../assets/images/gps_img.png"; // temporal hasta cambiar ícono
 import "../../assets/styles/Servicios.css";
 
 const Servicios = () => {
   const serviciosList = [
     {
-      title: "Desarrollo de Software",
-      description: "Aplicaciones móviles, web y sistemas empresariales.",
+      title: "Automatización de Ventas con IA",
+      description:
+        "Bots inteligentes, asistentes automatizados y sistemas que capturan, califican y convierten clientes 24/7.",
+      image: automationIcon,
+    },
+    {
+      title: "Desarrollo de Aplicaciones Empresariales",
+      description:
+        "Apps web y móviles diseñadas para optimizar procesos internos, aumentar productividad y escalar operaciones.",
       image: softwareIcon,
     },
     {
-      title: "Sistemas GPS",
-      description: "Monitoreo en tiempo real con dispositivos de rastreo.",
-      image: gpsIcon,
-    },
-    {
-      title: "IoT y Automatización",
-      description: "Control y monitoreo de sensores, luces y más.",
-      image: iotIcon,
+      title: "Integraciones y Sistemas Inteligentes",
+      description:
+        "Conectamos CRM, WhatsApp, APIs y plataformas para crear ecosistemas digitales eficientes y automatizados.",
+      image: integrationIcon,
     },
   ];
 
   return (
-    <div className="servicios">
-      <h2>Nuestros Servicios</h2>
+    <div className="servicios" id="servicios">
+      <h2>Nuestras Soluciones</h2>
       <div className="servicios-container">
         {serviciosList.map((servicio, index) => (
           <div key={index} className="servicio-card">
