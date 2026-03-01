@@ -1,4 +1,4 @@
-import { BsLinkedin, BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
+import { BsLinkedin, BsInstagram, BsWhatsapp } from "react-icons/bs";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { CONTACT_EMAIL, CONTACT_PHONE, COMPANY_NAME } from "../../config/constants";
 import '../../assets/styles/footer.css';
@@ -14,10 +14,10 @@ const Footer = () => {
           <div className="footer-column branding">
             <h3 className="footer-logo">{COMPANY_NAME}</h3>
             <p className="footer-description">
-              Líderes en soluciones de electrónica, IoT y desarrollo de software a medida para la industria moderna.
+              Transformamos procesos empresariales mediante automatización con inteligencia artificial,
+              integraciones estratégicas y desarrollo de software a medida.
             </p>
             <div className="footer-social">
-              <a href="#" className="social-link" aria-label="Facebook"><BsFacebook /></a>
               <a href="#" className="social-link" aria-label="LinkedIn"><BsLinkedin /></a>
               <a href="#" className="social-link" aria-label="Instagram"><BsInstagram /></a>
             </div>
