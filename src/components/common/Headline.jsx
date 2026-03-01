@@ -10,19 +10,19 @@ const Headline = () => {
         <div className="headline-container">
           {/* Columna de Texto */}
           <div className="headline-text">
-            <span className="section-tag">LIDERANDO LA ERA DIGITAL</span>
+            <span className="section-tag">AUTOMATIZACIÓN INTELIGENTE PARA EMPRESAS</span>
             <h1>
-              Soluciones Inteligentes en <span className="text-gradient">Hardware & Software</span>
+              Automatizamos <span className="text-gradient">Ventas y Procesos</span> con Inteligencia Artificial
             </h1>
             <p className="headline-description">
-              Impulsamos tu empresa con sistemas de monitoreo GPS, desarrollo de software a medida y soluciones IoT de alta precisión.
+              Diseñamos sistemas de automatización con IA, aplicaciones empresariales e integraciones tecnológicas que optimizan procesos, capturan más clientes y aumentan la productividad de tu empresa.
             </p>
             <div className="headline-actions">
-              <a href="#servicios" className="submit-btn">
-                Explorar Soluciones <span className="btn-icon">→</span>
+              <a href="#diagnostico" className="submit-btn">
+                Solicitar Diagnóstico Gratuito <span className="btn-icon">→</span>
               </a>
-              <a href="#contacto" className="btn-secondary">
-                Hablemos de tu proyecto
+              <a href="#servicios" className="btn-secondary">
+                Agendar Consultoría Estratégica
               </a>
             </div>
           </div>
