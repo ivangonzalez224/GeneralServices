@@ -1,7 +1,7 @@
 import React from "react";
 import softwareIcon from "../../assets/images/software-icon.png";
-import automationIcon from "../../assets/images/iot-service.png"; // puedes reemplazar luego
-import integrationIcon from "../../assets/images/gps_img.png"; // temporal hasta cambiar ícono
+import automationIcon from "../../assets/images/automatizacionVentasIA.png";
+import integrationIcon from "../../assets/images/integracionesSistemasInteligentes.png";
 import "../../assets/styles/Servicios.css";
 
 const Servicios = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import "../../assets/styles/Headline.css";
 // Sugerencia: Una imagen que combine un dashboard de software con un dispositivo electrónico/GPS
-import heroImage from "../../assets/images/tech-background.png"; 
+import heroImage from "../../assets/images/Inicioeine.png"; 
 
 const Headline = () => {
   return (
@@ -32,13 +32,7 @@ const Headline = () => {
             <div className="visual-wrapper">
               <img src={heroImage} alt="Innovación Tecnológica IoT y Software" className="main-hero-img" />
               {/* Elemento decorativo que flota para dar profundidad */}
-              <div className="floating-card">
-                <span className="card-icon">📡</span>
-                <div>
-                  <p className="card-label">Sistemas GPS</p>
-                  <p className="card-status">Monitoreo en Tiempo Real</p>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
