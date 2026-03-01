@@ -1,4 +1,5 @@
 import React from "react";
+import "../../assets/styles/Diagnostico.css";
 
 const Diagnostico = () => {
   return (
