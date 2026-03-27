@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import { CONTACT_EMAIL, CONTACT_PHONE, COMPANY_NAME } from "../../config/constants";
 import "../../assets/styles/Contacto.css";
 
-/**
- * Contacto Component
- * Sección de contacto empresarial con formulario validado
- */
 const Contacto = () => {
   const [formData, setFormData] = useState({
     name: "",

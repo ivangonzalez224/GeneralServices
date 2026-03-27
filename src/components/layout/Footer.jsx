@@ -18,7 +18,7 @@ const Footer = () => {
               integraciones estratégicas y desarrollo de software a medida.
             </p>
             <div className="footer-social">
-              <a href="#" className="social-link" aria-label="LinkedIn"><BsLinkedin /></a>
+              <a href="https://www.linkedin.com/company/musuq-technologies" className="social-link" aria-label="LinkedIn"><BsLinkedin /></a>
               <a href="#" className="social-link" aria-label="Instagram"><BsInstagram /></a>
             </div>
           </div>
